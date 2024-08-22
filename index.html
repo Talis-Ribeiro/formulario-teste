@@ -7,7 +7,7 @@
 </head>
 <body>
   <h3>Cadastre-se</h3>
-  <form method="get" action="index.html">
+  <form method="get" action="index.html" enctype="multipart/form-data">
     <input name="nome"  type="text" placeholder="Nome">
     <input name="sobrenome" type="text" placeholder="Sobrenome">
     <br><br>
@@ -45,10 +45,12 @@
     <label for=""> Gênero</label><br> 
     
     <label for="feminino">Feminino</label>
-    <input type="radio" name="genero" id="feminino">
+    <input type="radio" name="genero" id="feminino" value="feminino">
     <label for="masculino">Masculino</label>
-    <input type="radio" name="genero" id="masculino">
-
+    <input type="radio" name="genero" id="masculino" value="masculino">
+<br><br>
+<input type="file">
+<br><br>
     <button type="submit">Enviar</button>
   </form>
 </body>
